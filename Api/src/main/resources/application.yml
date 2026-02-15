@@ -1,0 +1,27 @@
+spring:
+  cache:
+    type: caffeine
+    cache-names:
+      - institutionById
+      - institutionPage
+      - schoolById
+      - schoolPage
+      - departmentById
+      - departmentPage
+      - userById
+      - userPage
+      - courseById
+      - coursePage
+    caffeine:
+      spec: maximumSize=1000,expireAfterWrite=10m
+  application:
+    name: uniflix-api
+
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 100
+        one-indexed-parameters: false
+      sort:
+        sort-parameter: sort

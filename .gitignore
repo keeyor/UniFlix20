@@ -1,0 +1,23 @@
+# IntelliJ project files to ignore
+.idea/
+!.idea/encodings.xml
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/vcs.xml
+!.idea/runConfigurations/
+
+# Ignore all .iml files
+*.iml
+
+# React
+node_modules/
+build/
+dist/
+
+# Env
+.env.local
+.env
+
+# Other common
+/out/
+target/
